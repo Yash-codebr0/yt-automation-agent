@@ -1,0 +1,4 @@
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000    
+celery -A backend.app.core.celery_app worker --loglevel=info --pool=solo
+cd frontend && npm run dev
+

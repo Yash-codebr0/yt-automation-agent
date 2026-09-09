@@ -1,0 +1,42 @@
+# ── Secrets & environment ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Databases & runtime state ────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+celerybeat-schedule.*
+clntid
+
+# ── Media / uploads (large binaries, tokens) ────────────────────────────────
+media/youtube_token.json
+media/youtube_oauth_state.txt
+media/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# ── Frontend ─────────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ── OS & IDE ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
